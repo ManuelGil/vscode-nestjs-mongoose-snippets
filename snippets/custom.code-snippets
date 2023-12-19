@@ -1,0 +1,17 @@
+{
+  "MongooseModule forRoot": {
+    "prefix": ["ns_mongoose_module_root", "MongooseModule"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["MongooseModule.forRoot($0),", ""]
+  },
+  "MongooseModule forRootAsync": {
+    "prefix": ["ns_mongoose_module_root_async", "MongooseModule"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["MongooseModule.forRootAsync({", "  useFactory: async (configService: ConfigService) => $0,", "  inject: [ConfigService],", "}),", ""]
+  },
+  "MongooseModule forFeature": {
+    "prefix": ["ns_mongoose_module_feature", "MongooseModule"],
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["MongooseModule.forFeature([{", "  name: $1", "  schema: $2", "}]),", ""]
+  }
+}
