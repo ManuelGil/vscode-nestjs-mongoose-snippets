@@ -1,37 +1,37 @@
 {
   "InjectModel": {
     "prefix": ["ns_mongoose_inject_model", "@InjectModel"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@InjectModel($1.name) private $1Model: Model<$1>"
   },
   "InjectConnection": {
     "prefix": ["ns_mongoose_inject_connection", "@InjectConnection"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "@InjectConnection() private connection: Connection"
   },
   "mongooseSchemaTypesObjectId": {
     "prefix": ["ns_mongoose_schema_types_object_id", "mongoose.Schema.Types.ObjectId"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "mongoose.Schema.Types.ObjectId"
   },
   "mongooseFindOne": {
     "prefix": ["ns_mongoose_find_one", "findOne"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "$1 = await this.$1Model.findOne({ $2 }).exec();"
   },
   "mongooseFindById": {
     "prefix": ["ns_mongoose_find_by_id", "findById"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "$1 = await this.$1Model.findById(id).exec();"
   },
   "mongooseFind": {
     "prefix": ["ns_mongoose_find", "find"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": "$1 = await this.$1Model.find({ $2 });"
   },
   "mongooseCreate": {
     "prefix": ["ns_mongoose_create", "create"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "scope": "typescript",
     "body": ["const $1 = new this.$1Model($2);", "return $1.save();"]
   }
 }
