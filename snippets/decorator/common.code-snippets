@@ -1,75 +1,75 @@
 {
-  "Schema": {
+  "Mongoose Schema": {
     "prefix": ["ns_mongoose_deco_schema", "@Schema"],
     "scope": "typescript",
     "body": ["import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';", "import { HydratedDocument } from 'mongoose';", "", "export type ${1:DocumentName}Document = HydratedDocument<${1:DocumentName}>;", "", "@Schema()", "export class ${1:DocumentName} {", "  $0", "}", "", "export const ${1:DocumentName}Schema = SchemaFactory.createForClass(${1:DocumentName});"]
   },
-  "Prop": {
+  "Mongoose Prop": {
     "prefix": ["ns_mongoose_deco_prop", "@Prop"],
     "scope": "typescript",
     "body": "@Prop({ $1 })"
   },
-  "PropString": {
+  "Mongoose PropString": {
     "prefix": ["ns_mongoose_deco_prop_string", "@PropString"],
     "scope": "typescript",
     "body": "@Prop({ type: String, $1 })"
   },
-  "PropNumber": {
+  "Mongoose PropNumber": {
     "prefix": ["ns_mongoose_deco_prop_number", "@PropNumber"],
     "scope": "typescript",
     "body": "@Prop({ type: Number, $1 })"
   },
-  "PropBoolean": {
+  "Mongoose PropBoolean": {
     "prefix": ["ns_mongoose_deco_prop_boolean", "@PropBoolean"],
     "scope": "typescript",
     "body": "@Prop({ type: Boolean, $1 })"
   },
-  "PropDate": {
+  "Mongoose PropDate": {
     "prefix": ["ns_mongoose_deco_prop_date", "@PropDate"],
     "scope": "typescript",
     "body": "@Prop({ type: Date, $1 })"
   },
-  "PropObjectId": {
+  "Mongoose PropObjectId": {
     "prefix": ["ns_mongoose_deco_prop_objectid", "@PropObjectId"],
     "scope": "typescript",
     "body": "@Prop({ type: mongoose.Schema.Types.ObjectId, $1 })"
   },
-  "PropArray": {
+  "Mongoose PropArray": {
     "prefix": ["ns_mongoose_deco_prop_array", "@PropArray"],
     "scope": "typescript",
     "body": "@Prop({ type: [${1:Type}], $2 })"
   },
-  "PropMap": {
+  "Mongoose PropMap": {
     "prefix": ["ns_mongoose_deco_prop_map", "@PropMap"],
     "scope": "typescript",
     "body": "@Prop({ type: Map, of: ${1:Type}, $2 })"
   },
-  "PropNested": {
+  "Mongoose PropNested": {
     "prefix": ["ns_mongoose_deco_prop_nested", "@PropNested"],
     "scope": "typescript",
     "body": "@Prop({ type: ${1:Type}, $2 })"
   },
-  "PropRef": {
+  "Mongoose PropRef": {
     "prefix": ["ns_mongoose_deco_prop_ref", "@PropRef"],
     "scope": "typescript",
     "body": "@Prop({ type: mongoose.Schema.Types.ObjectId, ref: '${1:Ref}', $2 })"
   },
-  "PropEnum": {
+  "Mongoose PropEnum": {
     "prefix": ["ns_mongoose_deco_prop_enum", "@PropEnum"],
     "scope": "typescript",
     "body": "@Prop({ type: String, enum: ${1:Enum}, $2 })"
   },
-  "PropRequired": {
+  "Mongoose PropRequired": {
     "prefix": ["ns_mongoose_deco_prop_required", "@PropRequired"],
     "scope": "typescript",
     "body": "@Prop({ required: true, $1 })"
   },
-  "PropUnique": {
+  "Mongoose PropUnique": {
     "prefix": ["ns_mongoose_deco_prop_unique", "@PropUnique"],
     "scope": "typescript",
     "body": "@Prop({ unique: true, $1 })"
   },
-  "PropIndex": {
+  "Mongoose PropIndex": {
     "prefix": ["ns_mongoose_deco_prop_index", "@PropIndex"],
     "scope": "typescript",
     "body": "@Prop({ index: true, $1 })"

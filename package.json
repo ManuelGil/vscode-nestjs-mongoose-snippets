@@ -2,7 +2,7 @@
   "name": "vscode-nestjs-mongoose-snippets",
   "displayName": "NestJS Mongoose ODM Snippets for VSCode Editor",
   "description": "Snippets for NestJS Mongoose ODM for VSCode Editor. This extension for Visual Studio Code adds snippets for NestJS Mongoose ODM for TypeScript.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",
